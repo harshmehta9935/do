@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SunRise Flow Yoga</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fdf8;
+color:#333;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#2f855a;
+}
+
+nav a{
+text-decoration:none;
+margin-left:28px;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38a169;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 8%;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.35)),
+url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80') center/cover;
+color:#fff;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 38px;
+background:#38a169;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#2f855a;
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:20px;
+color:#2f855a;
+}
+
+.section-text{
+text-align:center;
+max-width:800px;
+margin:auto auto 50px;
+color:#666;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2f855a;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:16px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.cta{
+background:linear-gradient(135deg,#38a169,#68d391);
+color:#fff;
+text-align:center;
+border-radius:25px;
+padding:70px 30px;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+.contact button{
+padding:15px;
+border:none;
+background:#38a169;
+color:#fff;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+.contact button:hover{
+background:#2f855a;
+}
+
+.info{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+footer{
+background:#2f855a;
+padding:25px;
+text-align:center;
+color:#fff;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+.section-title{
+font-size:30px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">SunRise Flow Yoga</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Classes</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Refresh Every Morning With Yoga</h1>
+
+<p>
+Build strength, improve flexibility, and start each day with calm energy through guided morning yoga sessions designed for every experience level.
+</p>
+
+<a href="#contact" class="btn">Book Your First Session</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<p class="section-text">
+SunRise Flow Yoga helps people create healthier mornings through mindful movement, breathing exercises, and relaxing meditation. Our certified instructors make every class welcoming for beginners and experienced practitioners alike.
+</p>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h2>Start Every Day With Positive Energy</h2>
+
+<br>
+
+<p>
+Our sunrise yoga sessions combine traditional yoga techniques with modern wellness practices to improve posture, reduce stress, increase flexibility, and create lasting healthy habits.
+</p>
+
+<br>
+
+<p>
+Whether you want to boost your fitness or simply enjoy peaceful mornings, our classes are designed to support your personal wellness journey.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Programs</h2>
+
+<p class="section-text">
+Choose a yoga experience that fits your lifestyle.
+</p>
+
+<div class="services">
+
+<div class="card">
+<h3>🌅 Sunrise Yoga</h3>
+<p>Gentle stretching and mindful breathing to energize your morning.</p>
+</div>
+
+<div class="card">
+<h3>🧘 Meditation</h3>
+<p>Guided meditation sessions for focus, peace, and emotional balance.</p>
+</div>
+
+<div class="card">
+<h3>💪 Flexibility Training</h3>
+<p>Improve mobility with carefully designed yoga sequences.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Wellness Coaching</h3>
+<p>Personal guidance to build sustainable healthy morning routines.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<p class="section-text">
+Moments from our peaceful yoga community.
+</p>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2>Wake Up. Stretch. Smile.</h2>
+
+<p>
+Join our growing yoga family and enjoy your first morning class with expert guidance.
+</p>
+
+<a href="#contact" class="btn">Reserve Your Spot</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p class="section-text">
+We're here to help you begin your wellness journey.
+</p>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div class="info">
+
+<h3>SunRise Flow Yoga Studio</h3>
+
+<br>
+
+<p>📍 Wellness Avenue</p>
+
+<p>📞 +1 (555) 123-4567</p>
+
+<p>📧 hello@sunriseflowyoga.com</p>
+
+<br>
+
+<h4>Opening Hours</h4>
+
+<p>Monday - Sunday</p>
+
+<p>5:30 AM – 10:00 AM</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 SunRise Flow Yoga. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
